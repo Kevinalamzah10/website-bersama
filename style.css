@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root {
-    --primaryTextColor: black;
-    --SecondaryTectColor: grey;
-
-    --borderColor: #f1f1f1;
-    --lineColor: #d9d9d9;
-
-    --primaryBackgroundColor: #fff;
-    --SecondaryBackgroundColor: #fbfbfb;
-    --thridBackgroundColor: #f5f3fe;
-
-    --primaryIconColor: #7e74f1;
-    --primaryIconColorHover: #5d51e8;
-
-    --sectionPadding: 6rem 0;
-
-    --itemBorderRadius: 0.7rem;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -35,7 +16,7 @@ section{
 }
 
 h1, h2, h3, h4, h5, h6 strong{
-    color: var(--primaryTextColor);
+    color: black;
 }
 
 p{
@@ -44,7 +25,7 @@ p{
 }
 
 p, span, label, input, textarea, li {
-    color: var(--SecondaryBackgroundColor);
+    color: grey;
 }
 
 a{
@@ -106,8 +87,14 @@ section nav ul li a:hover:after{
     
 }
 
+.navbar.scrolling-active{
+    background-color: orangered;
+    padding: 30px 0 30px;
+}
+
 section nav ul li a:hover{
     color: orangered;
+    transition: all 0.3s ease;
 }
 
 section .box{
