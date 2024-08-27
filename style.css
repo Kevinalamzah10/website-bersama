@@ -275,3 +275,15 @@ nav ul li{
     padding: .4rem 1rem;
     color: var(--secondaryTextColor);
 }
+
+/* Skilles & Education */
+#skills{
+    padding: var(--sectionPadding);
+    background: var(--secondaryBacgroundColor);
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, ninmax(350px, 1fr));
+    gap: 3rem;
+}
