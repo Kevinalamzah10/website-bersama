@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root{
+    --primaryTextColor: #232e35;
+    --secondaryTextColor: #656d72;
+
+    --borderColor: #a79898;
+    --LineColor: #d9d9d9;
+    --primaryBackgroundColor: #fff;
+    --secondaryBackgroundColor: #fbfbfb;
+    --thirdBackgroundColor: #f5f3fe;
+
+    --primaryIconColor: #e6c456;
+    --primaryIconColorHover: #5d51e8;
+
+    --sectionPadding: 6rem 0;
+
+    --itemBorderRadius: 0.7rem;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +29,7 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6 strong{
-    color: black;
+    color: var(--primaryTextColor);
 }
 
 p{
@@ -53,15 +71,15 @@ a{
 
 /* Title */
 .section-title{
-    margin: 1rem 0 2rem;
-
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
 }
 
 
 .pre-title{
     text-transform: uppercase;
     letter-spacing: 0.5rem;
-    color: rgb(126, 203, 233);
+    color: rgb(20, 238, 13);
     position: relative;
     padding-left: 40px;
     width: fit-content;
@@ -73,7 +91,7 @@ a{
     content: "";
     width: 30px;
     height: 1px;
-    background: rgb(126, 203, 233);
+    background: rgb(20, 238, 13);;
     position: absolute;
     display: block;
     left: 0;
@@ -190,10 +208,70 @@ nav ul li{
 }
 
 .service-icon{
-    background: var(thirdBackgroundColor);
+    background: var(--thirdBackgroundColor);
     width: fit-content;
     margin: 0 auto;
     padding: 1rem 1.3rem;
     border-radius: 0.5rem;
 }
 
+.service-icon svg{
+    fill: var(--primaryIconColor);
+}
+
+#portofolios {
+    padding: var(--sectionPadding);
+}
+
+.portofolio {
+    border-radius: var(--itemBorderRadius);
+    overflow: hidden;
+    border: 1px solid var(--borderColor);
+}
+
+.portofolio-cover {
+    height: 250px;
+}
+
+.portofolio-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portofolio-info {
+    padding: 2rem 1.5rem;
+}
+
+.portofolio-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portofolio h4{
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.portofolio-title a svg:hover{
+    fill: var(--primaryIconColor);
+}
+
+.portofolio-title a svg{
+    transition: 0.2s ease-in-out;
+}
+
+.portofolio-tags{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.portofolio-tags div{
+    font-size: .9rem;
+    border: 1px solid var(--borderColor);
+    padding: .4rem 1rem;
+    color: var(--secondaryTextColor);
+}
