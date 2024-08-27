@@ -284,6 +284,51 @@ nav ul li{
 
 .skills-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, ninmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
+}
+
+.education{
+    display: flex;
+    gap: 2rem;
+}
+
+.education .line{
+    padding: 0 .7rem;
+}
+
+.education .line div{
+    width: 2px;
+    height: 100%;
+    background: var(--borderColor);
+    position: relative;
+}
+
+.education-info p{
+    margin: .6rem 0 1.4rem;
+}
+
+.education-years{
+    margin-bottom: 3rem;
+}
+
+.education .line div::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--borderColor);
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.skills-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skills-right{
+    line-height: 2rem;
+    padding: 0 1rem;
 }
