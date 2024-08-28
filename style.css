@@ -81,7 +81,7 @@ a{
     letter-spacing: 0.5rem;
     color: rgb(20, 238, 13);
     position: relative;
-    padding-left: 40px;
+    padding-left: 20px;
     width: fit-content;
     font-weight: 400;
     font-size: 0.9rem;
@@ -114,7 +114,7 @@ a{
 .nav ul{
     list-style: none;
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
 
 }
 
