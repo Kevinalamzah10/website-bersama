@@ -149,7 +149,7 @@ nav ul li{
 .burger{
     display: none;
     z-index: 99;
-    position: fixed;
+    position: relative;
     top: 33px;
     right: 35px;
 }
@@ -359,8 +359,7 @@ nav ul li{
     resize: none;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder{
+.contact-form input::placeholder .contact-form textarea::placeholder{
     color: #524d4d;
 }
 
@@ -399,6 +398,28 @@ nav ul li{
     fill: var(--primaryIconColorHover);
 }
 
-.contact-item-detail{
+.contact-item-detail h4{
     margin-bottom: 0.6rem;
+}
+
+footer{
+    padding: 4rem 0;
+    background: var(--secondaryBacgroundColor);
+    text-align: center;
+}
+
+.footer-icons{
+    margin-bottom: 1rem;
+}
+
+.footer-icons a{
+    margin: 0 .5rem;
+}
+
+.footer-icons svg{
+    fill: #3e3f40;
+}
+
+.footer-icons a svg:hover{
+    fill: #e6c456;
 }
