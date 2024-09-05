@@ -7,8 +7,8 @@ const navSlide = () =>{
 }
 
 // Clear form before uunload
-window.onbeforeundload = () =>{
-    for (conts form of document.getElementsByTagName("form")) {
+window.onbeforeunload = () =>{
+    for (const form of document.getElementsByTagName("form")) {
         form.reset();
     }
 }
