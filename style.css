@@ -89,7 +89,7 @@ a{
 
 .pre-title::before{
     content: "";
-    width: 30px;
+    width: 18px;
     height: 1px;
     background: rgb(20, 238, 13);;
     position: absolute;
@@ -314,8 +314,8 @@ nav ul li{
 
 .education .line div::before{
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background: var(--borderColor);
     border-radius: 50%;
     position: absolute;
